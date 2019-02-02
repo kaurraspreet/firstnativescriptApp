@@ -1,0 +1,19 @@
+<Page loaded="loaded">
+    <Label text="Groceries" />
+         
+        <Page.actionBar>
+           <ActionBar title="Sign in"></ActionBar> 
+        </Page.actionBar>
+
+    <ScrollView>
+        <StackLayout class="home-panel" orientation="vertical">
+            <Image src="http://www.rivieramayagroceries.com/wp-content/uploads/2018/01/gro.jpg" 
+            stretch="none" horizontalAlignment="center" />
+            <TextField id="email" text="{{email}}" hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
+            <TextField hint="Password"  text="{{password}}"  secure="true" />
+            <Button class="sign_in" text="sign in" tap="signIn" />
+            <Button class="link" text="sign up for Groceries" tap="register"/>
+        </StackLayout>
+    </ScrollView>
+
+</Page>
